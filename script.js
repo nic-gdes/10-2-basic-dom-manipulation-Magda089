@@ -28,11 +28,9 @@ list.innerHTML = "";
 // 6.3 Then loop through the dinoFacts array, and appendChild each fact to the list variable. Remember you can loop through an array by using array.length to get the total number of items in the array to end the loop;
 
 for (let i = 0; i < dinoFacts.length; i++) {
-    const currentFact = dinoFact[i];
-    const li = document.createElement('li');
+    const currentFact = dinoFacts[i];
+    const newListItem = document.createElement('li');
 
-newListitem.textContent = currentFact;
-
+    newListItem.textContent = currentFact;
     list.appendChild(newListItem);
-    // console.log(currentFact);
 } 
